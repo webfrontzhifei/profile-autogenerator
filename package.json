@@ -1,5 +1,5 @@
 {
-  "name": "webpack-singleApp",
+  "name": "profile-autogenerator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webfrontzhifei/webpack-singleApp.git"
+    "url": "git+https://github.com/webfrontzhifei/profile-autogenerator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/webfrontzhifei/webpack-singleApp/issues"
+    "url": "https://github.com/webfrontzhifei/profile-autogenerator/issues"
   },
-  "homepage": "https://github.com/webfrontzhifei/webpack-singleApp#readme"
+  "homepage": "https://github.com/webfrontzhifei/profile-autogenerator#readme"
 }
