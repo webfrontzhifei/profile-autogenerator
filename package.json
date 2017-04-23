@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/webfrontzhifei/profile-autogenerator/issues"
   },
-  "homepage": "https://github.com/webfrontzhifei/profile-autogenerator#readme"
+  "homepage": "https://github.com/webfrontzhifei/profile-autogenerator#readme",
+  "devDependencies": {
+    "precommit": "^1.2.2",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "vue": "^2.2.6",
+    "vue-router": "^2.4.0",
+    "vuex": "^2.3.1"
+  }
 }
