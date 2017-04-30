@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/webfrontzhifei/profile-autogenerator#readme",
   "devDependencies": {
+    "babel-loader": "^7.0.0",
+    "cross-env": "^4.0.0",
+    "file-loader": "^0.11.1",
     "nodemon": "^1.11.0",
     "precommit": "^1.2.2",
+    "vue-loader": "^12.0.2",
     "webpack": "^2.4.1"
   },
   "dependencies": {
