@@ -2,7 +2,7 @@
 * @Author: frontendzhifei
 * @Date:   2017-04-25 23:14:13
 * @Last Modified by:   frontendzhifei
-* @Last Modified time: 2017-04-27 00:17:48
+* @Last Modified time: 2017-04-30 15:16:40
 */
 import path from 'path';
 
@@ -14,13 +14,6 @@ import logger from 'morgan';
 // import { debug, port } from './config';
 // import apiRouter from './routes/api';
 import pageRouter from './routes/page';
-// const path = require('path');
-// const bodyParser = require('body-parser');
-// const chalk = require('chalk');
-// const cookieParser = require('cookie-parser');
-// const express = require('express');
-// const logger = require('morgan');
-// const pageRouter = require('./routes/page');
 
 const app = express();
 app.set('port', 4000);
