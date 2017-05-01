@@ -1,13 +1,11 @@
 <template>
-	<div class="app clearfix">
-		
+	<div class="app clearfix">	
 		<div class="content">
-			zhifei
+			zhifeifdsfds
 		</div>
 	</div>
 </template>
-<script>
-	
+<script>	
 	export default {
 		// components: {
 		// 	// vHeader,

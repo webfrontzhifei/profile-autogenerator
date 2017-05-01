@@ -2,7 +2,7 @@
 * @Author: frontendzhifei
 * @Date:   2017-04-25 23:14:13
 * @Last Modified by:   frontendzhifei
-* @Last Modified time: 2017-04-30 15:16:40
+* @Last Modified time: 2017-05-01 17:40:50
 */
 import path from 'path';
 
@@ -14,6 +14,7 @@ import logger from 'morgan';
 // import { debug, port } from './config';
 // import apiRouter from './routes/api';
 import pageRouter from './routes/page';
+const debug = true;
 
 const app = express();
 app.set('port', 4000);
@@ -34,9 +35,9 @@ app.use(cookieParser());
 app.use('/', pageRouter);
 app.use('/:site/page', pageRouter);
 
-// if(debug) {
-// 	require('../../build/setup-dev-server.js')(app);
-// }
+if(debug) {
+	require('../../build/setup-dev-server.js')(app);
+}
 
 app.use(function(req, res, next) {
 	res.status(404).render('404.html');

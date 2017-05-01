@@ -35,10 +35,10 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			filename: path.resolve(__dirname, '../dist/views/test.html'),
-			template: path.resolve(__dirname, '../src/server/views/test.html'),
-			inject: true
-		})
+		// new HtmlWebpackPlugin({
+		// 	filename: path.resolve(__dirname, '../dist/views/test.html'),
+		// 	template: path.resolve(__dirname, '../src/server/views/test.html'),
+		// 	inject: true
+		// })
 	]
 };
