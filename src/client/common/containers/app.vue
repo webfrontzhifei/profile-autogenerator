@@ -1,33 +1,36 @@
 <template>
 	<div class="app clearfix">
-		<v-header></v-header>
+		
 		<div class="content">
-			<router-view></router-view>
+			zhifei
 		</div>
 	</div>
 </template>
 <script>
-	import app from 'common/services/app.service';
-
-	import vHeader from 'common/containers/header.vue';
-
+	
 	export default {
-		components: {
-			vHeader,
-		},
+		// components: {
+		// 	// vHeader,
+		// },
 
-		created() {
-			const data = window.__init_state;
+		// created() {
+		// 	// const data = window.__init_state;
 
-			this.$store.commit(types.RECEIVE_USER_DATA, data.user);
-			this.$store.commit(types.RECEIVE_DOMAINS_DATA, data.domains);
-		},
+		// 	// this.$store.commit(types.RECEIVE_USER_DATA, data.user);
+		// 	// this.$store.commit(types.RECEIVE_DOMAINS_DATA, data.domains);
+		// },
 
-		mounted() {
+		// mounted() {
 
-		},
+		// },
+		 	  name: 'app',
+			  data () {
+			    return {
+			      msg: 'Welcome to Your Vue.js App'
+			    }
+			  }
 	}
 </script>
-<style lang="sass">
+<style>
 	
 </style>
