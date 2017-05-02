@@ -2,7 +2,7 @@
 * @Author: frontendzhifei
 * @Date:   2017-04-25 23:14:13
 * @Last Modified by:   frontendzhifei
-* @Last Modified time: 2017-05-01 17:40:50
+* @Last Modified time: 2017-05-03 01:01:21
 */
 import path from 'path';
 
@@ -28,6 +28,8 @@ app.use(bodyParser.urlencoded({
 	extended: false,
 }));
 app.use(cookieParser());
+var staticPath = path.posix.join('/', 'static');
+app.use(staticPath, express.static('./static'));
 
 // app.use('/ajax', apiRouter);
 // app.use('/:site/ajax', apiRouter);
@@ -38,6 +40,8 @@ app.use('/:site/page', pageRouter);
 if(debug) {
 	require('../../build/setup-dev-server.js')(app);
 }
+
+
 
 app.use(function(req, res, next) {
 	res.status(404).render('404.html');

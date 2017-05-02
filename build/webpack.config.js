@@ -3,11 +3,16 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	entry: './src/client/common/index.js',
+	entry: {
+		// app: './src/client/common/index.js',
+		app:  ['webpack-hot-middleware/client?path=common/__webpack_hmr',
+                './src/client/common/index.js']
+	},	
 	output: {
-		path: path.resolve(__dirname, '../dist'),
-		publicPath: '/dist/',
-		filename: 'build.js'
+		path: path.resolve(__dirname, '../dist/static/'),
+		publicPath: '/static/',
+		filename: '[name].js',
+		chunkFilename: '[name].js',
 	},
 	module: {
 		rules: [
@@ -35,10 +40,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		// new HtmlWebpackPlugin({
-		// 	filename: path.resolve(__dirname, '../dist/views/test.html'),
-		// 	template: path.resolve(__dirname, '../src/server/views/test.html'),
-		// 	inject: true
-		// })
+	 	new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin({
+			filename: path.resolve(__dirname, '../dist/views/test.html'),
+			template: path.resolve(__dirname, '../src/server/views/test.html'),
+			inject: true
+		})
 	]
 };

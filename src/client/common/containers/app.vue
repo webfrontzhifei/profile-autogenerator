@@ -1,7 +1,7 @@
 <template>
 	<div class="app clearfix">	
 		<div class="content">
-			zhifeifdsfds
+			zhife
 		</div>
 	</div>
 </template>
