@@ -2,12 +2,13 @@
 * @Author: frontendzhifei
 * @Date:   2017-05-01 00:39:23
 * @Last Modified by:   frontendzhifei
-* @Last Modified time: 2017-05-01 13:25:20
+* @Last Modified time: 2017-06-04 00:53:21
 */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import App from '../common/containers/app.vue';
+import App from './containers/app.vue';
+import index from '../home/index.js';
 
 Vue.use(VueRouter);
 

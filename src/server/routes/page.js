@@ -1,7 +1,7 @@
 var express = require('express');
 const router = express.Router();
-router.get('/', function(req, res, next) {
-	res.render('test.html', {
+router.get('/index', function(req, res, next) {
+	res.render('home.html', {
 		'name':'zhifei'
 	});
 });

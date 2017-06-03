@@ -42,8 +42,8 @@ module.exports = {
 	plugins: [
 	 	new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
-			filename: path.resolve(__dirname, '../dist/views/test.html'),
-			template: path.resolve(__dirname, '../src/server/views/test.html'),
+			filename: path.resolve(__dirname, '../dist/views/home.html'),
+			template: path.resolve(__dirname, '../src/server/views/home.html'),
 			inject: true
 		})
 	]
